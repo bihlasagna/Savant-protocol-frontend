@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "layouts/Header";
 import Footer from "layouts/Footer";
 
-import HomePage from "pages/HomePage";
+import HomePage from "containers/HomePage";
 
 const App = () => {
   return (
