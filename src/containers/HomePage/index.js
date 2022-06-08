@@ -1,5 +1,11 @@
+import Button from 'components/Button';
 const HomePage = () => {
-  return <h1>HomePage</h1>;
+  return (
+    <>
+      <Button value="Create a Venture" bg-primary rounded-normal />
+      <h1>HomePage</h1>;
+    </>
+  );
 };
 
 export default HomePage;

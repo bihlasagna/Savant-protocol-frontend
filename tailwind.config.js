@@ -1,7 +1,18 @@
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    screens: {},
+    colors: {
+      primary: '#25D366',
+    },
+    fontFamily: {},
+    spacing: {},
+    extend: {
+      spacing: {},
+      borderRadius: {
+        normal: '1.25rem',
+      },
+    },
   },
   plugins: [],
 };
