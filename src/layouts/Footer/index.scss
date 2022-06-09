@@ -1,0 +1,18 @@
+footer {
+  color: white;
+  margin: 32px 80px;
+  border-top: 1px solid #ffffff;
+  padding-top: 2rem;
+  img {
+    height: 55px;
+    width: 55px;
+  }
+  .content {
+    margin-left: 28px;
+
+    .title,
+    .desc {
+      letter-spacing: 0.25em;
+    }
+  }
+}
