@@ -1,0 +1,23 @@
+.resources {
+  $root: &;
+
+  &-container {
+    width: 60%;
+    background-image: radial-gradient(
+      52.94% 39.38% at 50% 50%,
+      rgba(37, 211, 102, 0.4575) 0%,
+      rgba(37, 211, 102, 0) 100%
+    );
+
+    #{$root}-title {
+      font-weight: 700;
+      font-size: 36px;
+      letter-spacing: 0.25em;
+      margin-bottom: 5rem;
+    }
+
+    img {
+      margin-bottom: 200px;
+    }
+  }
+}
