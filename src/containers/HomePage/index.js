@@ -1,6 +1,7 @@
-import Button from 'components/Button';
+// import Button from 'components/Button';
+import Overview from 'components/Overview';
 const HomePage = () => {
-  return <></>;
+  return <Overview />;
 };
 
 export default HomePage;

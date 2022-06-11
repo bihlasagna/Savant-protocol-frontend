@@ -6,6 +6,7 @@ module.exports = {
       primary: '#25D366',
       header: '#1E1E1E',
       inputcontrol: '#474747',
+      white: '#ffffff',
     },
     fontFamily: {},
     spacing: {},
