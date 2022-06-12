@@ -1,0 +1,16 @@
+.button {
+  padding: 0.5rem 42px;
+  border-radius: 20px;
+  &.normal {
+    padding: 14px 42px;
+    background-color: theme('colors.primary');
+    font-size: 1.5rem;
+  }
+
+  &.special {
+    border: 1px solid theme('colors.primary');
+    padding: 14px 42px;
+    margin-right: 26px;
+    font-size: 1.5rem;
+  }
+}
