@@ -7,6 +7,7 @@ module.exports = {
       header: '#1E1E1E',
       inputcontrol: '#474747',
       white: '#ffffff',
+      black: '#000000',
     },
     fontFamily: {},
     spacing: {},
