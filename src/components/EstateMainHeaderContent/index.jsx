@@ -1,4 +1,24 @@
+import Button from 'components/Button';
 import './index.scss';
+
+const details = [
+  {
+    property: 'PRICE',
+    value: 'Ξ3.1',
+  },
+  {
+    property: 'TREASURY',
+    value: 'Ξ228.1',
+  },
+  {
+    property: 'RANKING',
+    value: '13',
+  },
+  {
+    property: 'OWNERS',
+    value: '496',
+  },
+];
 
 const EstateMainHeaderContent = () => {
   return (
@@ -14,7 +34,16 @@ const EstateMainHeaderContent = () => {
           Interdum et malesuada fames ac ante ipsum primis in faucibus. In
           laoreet tortor quis neque malesuada, eu semper nisi venenatis.
         </p>
-        <div className="details"></div>
+        <div className="details">
+          {details.map(({ property, value }, index) => (
+            <Button bg-primary text-black font-bold key={index}>
+              <div>
+                <p className="text-xs">{property}</p>
+                <p className="text-3xl">{value}</p>
+              </div>
+            </Button>
+          ))}
+        </div>
       </div>
     </div>
   );
