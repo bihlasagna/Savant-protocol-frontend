@@ -1,16 +1,48 @@
-.button {
-  padding: 0.5rem 42px;
-  border-radius: 20px;
-  &.normal {
-    padding: 14px 42px;
-    background-color: theme('colors.primary');
-    font-size: 1.5rem;
+.vehicle {
+  $root: &;
+  width: 50%;
+  margin-bottom: 44px;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 
-  &.special {
-    border: 1px solid theme('colors.primary');
-    padding: 14px 42px;
-    margin-right: 26px;
-    font-size: 1.5rem;
+  &-number {
+    width: 10%;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 34px;
+  }
+
+  &-content {
+    width: 60%;
+
+    img {
+      margin-right: 1rem;
+    }
+
+    .content {
+      .vehicle-title {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 34px;
+        letter-spacing: 0.25em;
+        margin-bottom: 2px;
+      }
+
+      .vehicle-stable {
+        letter-spacing: 0.25em;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  &-detail {
+    width: 30%;
+    #{$root}-apy {
+      font-size: 14px;
+    }
   }
 }
