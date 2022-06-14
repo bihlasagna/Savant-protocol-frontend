@@ -11,7 +11,10 @@ const SpinnerItem = ({ value, initialState = false }) => {
   };
 
   return (
-    <div className={cx('spinner-item', { active })} onClick={handleClick}>
+    <div
+      className={cx('spinner-item text-white', { active })}
+      onClick={handleClick}
+    >
       {value}
     </div>
   );

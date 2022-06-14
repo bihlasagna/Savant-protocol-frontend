@@ -1,0 +1,11 @@
+.spinner-item {
+  opacity: 0.5;
+  padding: 12px 24px;
+  letter-spacing: 0.25em;
+
+  &.active {
+    border-radius: 2rem;
+    opacity: 1;
+    border: 3px solid #25d366;
+  }
+}
