@@ -1,0 +1,26 @@
+.progress-bar {
+  .pbar-title {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    height: 20px;
+    width: 500px;
+    border: 2px solid theme('colors.primary');
+    border-radius: 20px;
+    margin-bottom: 18px;
+
+    .filled-content {
+      height: 100%;
+      width: 80%;
+      background-color: theme('colors.primary');
+      border-radius: 20px;
+    }
+  }
+
+  .progress-details {
+    font-weight: 500;
+    align-self: flex-end;
+  }
+}
