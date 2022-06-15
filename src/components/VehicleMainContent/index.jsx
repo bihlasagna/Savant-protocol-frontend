@@ -1,6 +1,9 @@
 import cx from 'classnames';
 import Box from 'components/Box';
+import Spinner from 'components/Spinner';
 import './index.scss';
+
+const ballanceSheetItem = ['ASSETS', 'LIABILITIES'];
 
 const topHolders = [
   'BIGMANZYX.ETH',
@@ -19,7 +22,22 @@ const VehicleMainContent = ({ children, ...rest }) => {
   return (
     <div className="vehicle-main-content">
       <div className="showcase-one"></div>
-      <div className="showcase-two"></div>
+      <div className="showcase-two flex flex-row">
+        <div className="ballance-sheet flex-1">
+          <Box title="BALLANCE SHEET">
+            <Spinner data={ballanceSheetItem} />
+            <div className="ballance-sheet-content">
+              <div>TREASURY:</div>
+              <div>OWNER WALLET:</div>
+              <div>OFF-CHAIN:</div>
+              <div>OTHER:</div>
+            </div>
+          </Box>
+        </div>
+        <div className="activity flex-1">
+          <Box title="ACTIVITY"></Box>
+        </div>
+      </div>
       <div className="showcase-three flex flex-row">
         <div className="operating-agreement flex flex-row">
           <Box title="OPERATING AGREEMENT">

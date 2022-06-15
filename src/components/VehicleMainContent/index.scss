@@ -1,5 +1,26 @@
 .vehicle-main-content {
   padding: 82px;
+
+  .showcase-two {
+    .box-item {
+      &:first-child {
+        margin-right: 124px;
+      }
+    }
+
+    .ballance-sheet {
+      margin-top: 68px;
+
+      &-content {
+        line-height: 68px;
+      }
+
+      > div {
+        letter-spacing: 0.25em;
+      }
+    }
+  }
+
   .showcase-three {
     margin-top: 150px;
 
