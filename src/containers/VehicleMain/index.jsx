@@ -1,6 +1,8 @@
 import VehicleMainHeader from 'components/VehicleMainHeader';
 import Spinner from 'components/Spinner';
 import Progressbar from 'components/Progressbar';
+import Chart from 'components/Chart';
+
 const spinnerData = ['TREASURY', 'PRICE'];
 
 const VehicleMain = () => {
@@ -9,6 +11,7 @@ const VehicleMain = () => {
       <VehicleMainHeader />
       <Spinner data={spinnerData} />
       <Progressbar />
+      <Chart />
     </>
   );
 };
