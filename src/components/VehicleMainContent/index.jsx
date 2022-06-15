@@ -1,6 +1,7 @@
 import Box from 'components/Box';
 import Spinner from 'components/Spinner';
 import ActivityItem from 'components/ActivityItem';
+import Progressbar from 'components/Progressbar';
 
 import './index.scss';
 
@@ -67,7 +68,16 @@ const activities = [
 const VehicleMainContent = ({ children, ...rest }) => {
   return (
     <div className="vehicle-main-content">
-      <div className="showcase-one"></div>
+      <div className="showcase-one flex">
+        <div className="line-graph flex-1 flex flex-col">
+          <div>
+            <Spinner data={['TREASURY', 'PRICE']} />
+          </div>
+        </div>
+        <div className="action-group flex-1 flex flex-col">
+          <Progressbar />
+        </div>
+      </div>
       <div className="showcase-two flex flex-row">
         <div className="ballance-sheet flex-1">
           <Box title="BALLANCE SHEET">

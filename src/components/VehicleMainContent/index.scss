@@ -1,6 +1,12 @@
 .vehicle-main-content {
   padding: 82px;
 
+  .showcase-one {
+    .line-graph {
+      margin-right: 124px;
+    }
+  }
+
   .showcase-two {
     .box-item {
       &:first-child {
