@@ -1,5 +1,36 @@
 .vehicle-main-content {
+  padding: 82px;
   .showcase-three {
     margin-top: 150px;
+
+    .operating-agreement {
+      letter-spacing: -0.009em;
+      line-height: 30px;
+
+      .pagination {
+        text-align: end;
+      }
+
+      .box-item {
+        &:first-child {
+          margin-right: 124px;
+        }
+
+        &:first-child {
+          .common-box {
+            .operating-agreement-content {
+              height: 80%;
+            }
+          }
+        }
+
+        .common-box {
+          height: 578px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      }
+    }
   }
 }

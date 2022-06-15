@@ -9,8 +9,6 @@ module.exports = {
       white: '#ffffff',
       black: '#000000',
     },
-    fontFamily: {},
-    spacing: {},
     extend: {
       spacing: {},
       borderRadius: {
