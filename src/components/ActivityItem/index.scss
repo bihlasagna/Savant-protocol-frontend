@@ -1,0 +1,22 @@
+.activity-item {
+  margin-bottom: 48px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &-header {
+    width: 20%;
+  }
+
+  &-title {
+    width: 60%;
+  }
+
+  &-footer {
+    width: 20%;
+    .address {
+      font-size: 10px;
+    }
+  }
+}

@@ -6,11 +6,14 @@
       &:first-child {
         margin-right: 124px;
       }
+      &:last-child {
+        margin-right: 0;
+      }
     }
 
     .ballance-sheet {
       margin-top: 68px;
-
+      margin-right: 124px;
       &-content {
         line-height: 68px;
       }

@@ -1,6 +1,7 @@
-import cx from 'classnames';
 import Box from 'components/Box';
 import Spinner from 'components/Spinner';
+import ActivityItem from 'components/ActivityItem';
+
 import './index.scss';
 
 const ballanceSheetItem = ['ASSETS', 'LIABILITIES'];
@@ -16,6 +17,51 @@ const topHolders = [
   '2F7Y...901L',
   'JACK.ETH',
   '2F7Y...901L',
+];
+
+const activities = [
+  {
+    type: 'FUNDED',
+    value: 'Ξ0.15',
+    title: 'Summer Street to the Moon!',
+    timeAgo: '2',
+    address: 'BIGMANZYX.ETH',
+  },
+  {
+    type: 'FUNDED',
+    value: 'Ξ0.03',
+    title: '',
+    timeAgo: '2',
+    address: 'BIGMANZYX.ETH',
+  },
+  {
+    type: 'FUNDED',
+    value: 'Ξ1',
+    title: '',
+    timeAgo: '3',
+    address: 'BIGMANZYX.ETH',
+  },
+  {
+    type: 'DISTRIB',
+    value: 'Ξ0.01',
+    title: '',
+    timeAgo: '4',
+    address: 'MUNGUS.ETH',
+  },
+  {
+    type: 'FUNDED',
+    value: 'Ξ0.46',
+    title: '',
+    timeAgo: '6',
+    address: '2F7Y...901L',
+  },
+  {
+    type: 'FUNDED',
+    value: 'Ξ2.5',
+    title: 'Best Building Around!',
+    timeAgo: '7',
+    address: 'JACK.ETH',
+  },
 ];
 
 const VehicleMainContent = ({ children, ...rest }) => {
@@ -35,7 +81,11 @@ const VehicleMainContent = ({ children, ...rest }) => {
           </Box>
         </div>
         <div className="activity flex-1">
-          <Box title="ACTIVITY"></Box>
+          <Box title="ACTIVITY">
+            {activities.map((activity, index) => (
+              <ActivityItem activity={activity} key={index} />
+            ))}
+          </Box>
         </div>
       </div>
       <div className="showcase-three flex flex-row">
