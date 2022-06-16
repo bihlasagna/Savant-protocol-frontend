@@ -5,6 +5,16 @@
     .line-graph {
       margin-right: 124px;
     }
+
+    .action-group {
+      .progress-bar {
+        margin-bottom: 1.5rem;
+      }
+
+      div:last-child {
+        margin-bottom: 56px;
+      }
+    }
   }
 
   .showcase-two {
@@ -26,6 +36,15 @@
 
       > div {
         letter-spacing: 0.25em;
+      }
+
+      .box-item {
+        .common-box {
+          .spinner {
+            position: relative;
+            right: 0;
+          }
+        }
       }
     }
   }

@@ -2,6 +2,7 @@ import Box from 'components/Box';
 import Spinner from 'components/Spinner';
 import ActivityItem from 'components/ActivityItem';
 import Progressbar from 'components/Progressbar';
+import InvestItem from 'components/InvestItem';
 
 import './index.scss';
 
@@ -76,6 +77,7 @@ const VehicleMainContent = ({ children, ...rest }) => {
         </div>
         <div className="action-group flex-1 flex flex-col">
           <Progressbar />
+          <InvestItem />
         </div>
       </div>
       <div className="showcase-two flex flex-row">
