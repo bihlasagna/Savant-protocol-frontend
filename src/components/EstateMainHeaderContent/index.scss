@@ -14,8 +14,11 @@
   }
   .details {
     > button {
-      width: 50%;
-      padding: 0.5rem;
+      div {
+        p:first-child {
+          letter-spacing: 0.25rem;
+        }
+      }
       margin-bottom: 22px;
     }
   }

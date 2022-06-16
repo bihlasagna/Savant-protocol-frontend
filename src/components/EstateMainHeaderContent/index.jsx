@@ -34,7 +34,7 @@ const EstateMainHeaderContent = () => {
           Interdum et malesuada fames ac ante ipsum primis in faucibus. In
           laoreet tortor quis neque malesuada, eu semper nisi venenatis.
         </p>
-        <div className="details">
+        <div className="details grid gap-4 grid-cols-2">
           {details.map(({ property, value }, index) => (
             <Button bg-primary text-black font-bold key={index}>
               <div>
