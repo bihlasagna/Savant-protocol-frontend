@@ -1,0 +1,28 @@
+.investments {
+  background: #1e1e1e;
+  border: 2px solid #25d366;
+  border-radius: 20px;
+  width: 40%;
+
+  &-content {
+    padding: 56px 50px;
+    > div:first-child {
+      letter-spacing: 0.25em;
+    }
+
+    .details {
+      .item {
+        margin-bottom: 34px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &-footer {
+    border-top: 2px solid #25d366;
+    padding: 12px;
+    letter-spacing: 0.25em;
+  }
+}

@@ -11,10 +11,11 @@ const Portfolio = () => {
         <Spinner data={spinnerData} />
       </div>
       <div className="portfolio-content flex items-center">
-        <div className="portfolio-content-detail">
+        <div>
           <p className="text-5xl font-semibold mb-12">Ξ3.45</p>
           <p className="text-xs font-medium">TOTAL VALUE</p>
         </div>
+        <div className="total-graph"></div>
       </div>
     </div>
   );
