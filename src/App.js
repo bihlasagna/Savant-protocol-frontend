@@ -4,6 +4,7 @@ import Footer from 'layouts/Footer';
 
 import HomePage from 'containers/HomePage';
 import VehicleMain from 'containers/VehicleMain';
+import UserInvestment from 'pages/UserInvestment';
 
 const App = () => {
   return (
@@ -12,6 +13,11 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<HomePage />}></Route>
         <Route exact path="/vehicle" element={<VehicleMain />}></Route>
+        <Route
+          exact
+          path="/user-investment"
+          element={<UserInvestment />}
+        ></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
