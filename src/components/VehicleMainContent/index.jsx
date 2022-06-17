@@ -3,6 +3,7 @@ import Spinner from 'components/Spinner';
 import ActivityItem from 'components/ActivityItem';
 import Progressbar from 'components/Progressbar';
 import InvestItem from 'components/InvestItem';
+import Chart from 'components/Chart';
 
 import './index.scss';
 
@@ -71,8 +72,9 @@ const VehicleMainContent = ({ children, ...rest }) => {
     <div className="vehicle-main-content">
       <div className="showcase-one flex">
         <div className="line-graph flex-1 flex flex-col">
-          <div>
+          <div className="graph-content">
             <Spinner data={['TREASURY', 'PRICE']} />
+            <Chart />
           </div>
         </div>
         <div className="action-group flex-1 flex flex-col">

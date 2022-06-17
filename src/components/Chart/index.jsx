@@ -25,6 +25,7 @@ ChartJS.register(
 
 const options = {
   responsive: true,
+  layout: {},
   plugins: {
     legend: {
       display: false,
@@ -54,9 +55,9 @@ const data = {
   labels,
   datasets: [
     {
-      data: labels.map(() => [0, 121, 551, 20, 100, 400, 200]),
-      borderColor: 'rgb(255, 99, 132)',
+      data: [65, 59, 80, 81, 56, 55, 40],
       backgroundColor: 'transparent',
+      borderColor: 'rgb(75, 192, 192)',
     },
   ],
 };
