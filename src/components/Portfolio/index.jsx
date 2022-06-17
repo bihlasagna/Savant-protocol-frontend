@@ -1,3 +1,4 @@
+import Chart from 'components/Chart';
 import Spinner from 'components/Spinner';
 import './index.scss';
 
@@ -11,11 +12,13 @@ const Portfolio = () => {
         <Spinner data={spinnerData} />
       </div>
       <div className="portfolio-content flex items-center">
-        <div>
+        <div className="funds">
           <p className="text-5xl font-semibold mb-12">Ξ3.45</p>
           <p className="text-xs font-medium">TOTAL VALUE</p>
         </div>
-        <div className="total-graph"></div>
+        <div className="total-graph">
+          <Chart />
+        </div>
       </div>
     </div>
   );

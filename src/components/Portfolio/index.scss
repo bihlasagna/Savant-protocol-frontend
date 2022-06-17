@@ -8,4 +8,14 @@
   &-header {
     margin-bottom: 42px;
   }
+
+  &-content {
+    .funds {
+      width: 30%;
+    }
+
+    .total-graph {
+      width: 70%;
+    }
+  }
 }

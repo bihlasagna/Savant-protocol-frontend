@@ -21,7 +21,7 @@ const Overview = () => {
       </div>
       <div className="building-gallery">
         <img src="./assets/images/summerstreet.png" alt="Building Avatar" />
-        <div className="caption">
+        <div className="caption bg-black">
           <p className="caption-title text-primary font-bold">
             15 SUMMER STREET
           </p>

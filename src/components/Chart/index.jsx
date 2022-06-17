@@ -10,7 +10,6 @@ import {
 } from 'chart.js';
 
 import { Line } from 'react-chartjs-2';
-// import faker from 'faker';
 
 import './index.scss';
 
@@ -28,7 +27,7 @@ const options = {
   responsive: true,
   plugins: {
     legend: {
-      position: 'top',
+      display: false,
     },
     title: {
       display: false,
@@ -55,7 +54,7 @@ const data = {
   labels,
   datasets: [
     {
-      data: labels.map(() => [180, 121, 551, 456, 125, 635, 447]),
+      data: labels.map(() => [0, 121, 551, 20, 100, 400, 200]),
       borderColor: 'rgb(255, 99, 132)',
       backgroundColor: 'transparent',
     },
