@@ -1,5 +1,6 @@
 import Portfolio from 'components/Portfolio';
 import Investments from 'components/Investments';
+import Governance from 'components/Governance';
 
 import './index.scss';
 
@@ -12,6 +13,7 @@ const UserInvestment = () => {
           <Portfolio />
           <Investments />
         </div>
+        <Governance />
       </div>
     </div>
   );
