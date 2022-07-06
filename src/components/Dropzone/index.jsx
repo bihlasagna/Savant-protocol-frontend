@@ -5,6 +5,7 @@ import './index.scss';
 const Dropzone = () => {
   const onDrop = useCallback((acceptedFiles) => {
     const [file] = acceptedFiles;
+
     console.log(file);
   }, []);
 
