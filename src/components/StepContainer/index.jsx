@@ -1,8 +1,20 @@
+import { useLocation, useNavigate } from 'react-router-dom';
 import './index.scss';
 
 const StepContainer = ({ title, uploadMetadata, children }) => {
+  const history = useLocation();
+  const navigate = useNavigate();
+
   const handleClick = () => {
-    uploadMetadata();
+    const { pathname } = history;
+    switch (pathname) {
+      case '/create':
+        uploadMetadata();
+        // navigate('/create/s2');
+        break;
+      default:
+        return;
+    }
   };
 
   return (
