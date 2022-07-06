@@ -1,4 +1,6 @@
 import Button from 'components/Button';
+import { Link } from 'react-router-dom';
+
 import './index.scss';
 
 const Overview = () => {
@@ -15,7 +17,7 @@ const Overview = () => {
             Discover
           </Button>
           <Button normal text-white bg-primary font-bold>
-            Create a TIV
+            <Link to="/create">Create a TIV</Link>
           </Button>
         </div>
       </div>
