@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import StepContainer from 'components/StepContainer';
+import Dropzone from 'components/Dropzone';
 
 const StepOne = () => {
   return (
@@ -11,7 +13,7 @@ const StepOne = () => {
       </div>
       <div className="company-description mb-16">
         <div className="company-description-label font-bold leading-9 mb-8 text-center text-4xl">
-          COMPANY DESCRIPTION
+          DESCRIPTION
         </div>
         <textarea type="text" className="company-description-content h-24" />
       </div>
@@ -19,6 +21,7 @@ const StepOne = () => {
         <div className="text-center font-bold leading-9 mb-8 text-4xl">
           LOGO
         </div>
+        <Dropzone />
       </div>
       <div className="company-social">
         <div className="text-center font-bold leading-9 mb-8 text-4xl">
