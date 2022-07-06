@@ -1,13 +1,16 @@
 import { useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
+
 import './index.scss';
 
-const Dropzone = () => {
-  const onDrop = useCallback((acceptedFiles) => {
-    const [file] = acceptedFiles;
-
-    console.log(file);
-  }, []);
+const Dropzone = ({ setLogo }) => {
+  const onDrop = useCallback(
+    (acceptedFiles) => {
+      const [file] = acceptedFiles;
+      setLogo(file);
+    },
+    [setLogo],
+  );
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
 

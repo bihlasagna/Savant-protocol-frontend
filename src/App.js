@@ -6,7 +6,9 @@ import Footer from 'layouts/Footer';
 import HomePage from 'containers/HomePage';
 import VehicleMain from 'containers/VehicleMain';
 import UserInvestment from 'pages/UserInvestment';
-import CreateLLC from 'components/CreateLLC';
+// import CreateLLC from 'components/CreateLLC';
+// import CreationPage from 'pages/CreateLLC';
+import StepOne from 'components/StepOne';
 
 const App = () => {
   return (
@@ -20,7 +22,7 @@ const App = () => {
           path="/user-investment"
           element={<UserInvestment />}
         ></Route>
-        <Route exact path="/create" element={<CreateLLC />}></Route>
+        <Route exact path="/create" element={<StepOne />} />
       </Routes>
       <Footer />
     </BrowserRouter>
