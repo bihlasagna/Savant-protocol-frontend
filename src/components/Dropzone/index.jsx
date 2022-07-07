@@ -7,7 +7,7 @@ const Dropzone = ({ setLogo }) => {
   const onDrop = useCallback(
     (acceptedFiles) => {
       const [file] = acceptedFiles;
-      setLogo(file);
+      setLogo(file.path);
     },
     [setLogo],
   );

@@ -1,7 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  metadata: [],
+  metadata: {
+    llc: {},
+  },
 };
 
 const llcCreationReducer = createSlice({
@@ -9,15 +11,8 @@ const llcCreationReducer = createSlice({
   initialState,
   reducers: {
     addMetadata(state, action) {
-      const { type, payload } = action;
-
-      switch (type) {
-        case 'LLC_CREATION':
-          state.metadata.llc = payload;
-          break;
-        default:
-          return state;
-      }
+      const { payload } = action;
+      state.metadata.llc = payload;
     },
   },
 });
