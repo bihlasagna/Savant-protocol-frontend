@@ -3,6 +3,10 @@
   color: white;
   border-bottom: 2px solid white;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   .nav-links {
     > div {
       margin-right: 40px;

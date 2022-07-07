@@ -5,7 +5,7 @@ import StepContainer from 'components/StepContainer';
 import Dropzone from 'components/Dropzone';
 import useInput from 'components/UseInput';
 
-import { addMetadata } from 'slices/llcSlice.js';
+import { uploadMetadataToIPFS } from 'slices/llcSlice.js';
 
 const StepOne = () => {
   const [llcLogo, setLogo] = useState({});
@@ -28,7 +28,7 @@ const StepOne = () => {
       desc: llcDesc,
       file: llcLogo,
     };
-    dispatch(addMetadata(metadata));
+    dispatch(uploadMetadataToIPFS(metadata));
   };
 
   return (
