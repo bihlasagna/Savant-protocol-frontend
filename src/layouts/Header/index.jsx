@@ -1,18 +1,40 @@
 import { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
 import { ethers } from 'ethers';
+
+import { addWalletInfo } from 'slices/walletSlice';
 
 import Searchbar from 'components/Searchbar';
 import './index.scss';
 
 const Header = () => {
   const [walletData, setData] = useState({ address: '', balance: null });
+  const { address, balance } = useSelector(
+    (state) => state.walletInfo.walletData,
+  );
+  const dispatch = useDispatch();
 
   const getbalance = async (address) => {
-    const balance = await window.ethereum.request({
+    const reponse = await window.ethereum.request({
       method: 'eth_getBalance',
       params: [address, 'latest'],
     });
-    setData({ balance: ethers.utils.formatEther(balance) });
+
+    const balance = parseFloat(ethers.utils.formatEther(reponse)).toPrecision(
+      3,
+    );
+
+    const payload = {
+      balance,
+      address,
+    };
+
+    dispatch(addWalletInfo(payload));
+
+    setData({
+      balance,
+    });
   };
 
   const accountChangeHandler = (account) => {
@@ -32,6 +54,10 @@ const Header = () => {
       alert('install metamask extension!!');
     }
   };
+
+  useEffect(() => {
+    walletConnect();
+  }, []);
 
   return (
     <div className="header bg-header flex flex-row justify-between items-center">
@@ -62,8 +88,8 @@ const Header = () => {
           className="user-avatar"
         />
         <div className="user-info">
-          <p className="font-semibold text-sm">{walletData.address}</p>
-          <p className="text-xs">Total Assets: {walletData.balance} ETH</p>
+          <p className="font-semibold text-sm">{address}</p>
+          <p className="text-xs">Total Assets: {balance} ETH</p>
         </div>
       </div>
     </div>
