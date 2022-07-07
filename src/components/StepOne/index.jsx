@@ -28,8 +28,7 @@ const StepOne = () => {
       desc: llcDesc,
       file: llcLogo,
     };
-
-    console.log(metadata);
+    dispatch(addMetadata(metadata));
   };
 
   return (
