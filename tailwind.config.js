@@ -14,6 +14,9 @@ module.exports = {
       borderRadius: {
         normal: '1.25rem',
       },
+      letterSpacing: {
+        widest: '.25rem',
+      },
     },
   },
   plugins: [],

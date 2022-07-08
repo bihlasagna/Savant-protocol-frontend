@@ -10,7 +10,7 @@ const StepContainer = ({ title, uploadMetadata, children }) => {
     switch (pathname) {
       case '/create':
         uploadMetadata();
-        // navigate('/create/s2');
+        navigate('/create/s2');
         break;
       default:
         return;

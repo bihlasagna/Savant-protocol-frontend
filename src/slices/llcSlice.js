@@ -16,6 +16,7 @@ const initialState = {
   loading: false,
   metadata: {
     llc: {},
+    fundingCycle: {},
   },
 };
 
