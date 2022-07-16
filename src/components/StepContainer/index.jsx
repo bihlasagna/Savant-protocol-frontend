@@ -7,6 +7,7 @@ const StepContainer = ({ title, uploadMetadata, children }) => {
 
   const handleClick = () => {
     const { pathname } = history;
+
     switch (pathname) {
       case '/create':
         uploadMetadata();

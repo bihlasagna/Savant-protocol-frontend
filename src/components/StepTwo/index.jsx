@@ -4,8 +4,9 @@ import StepContainer from 'components/StepContainer';
 import useInput from 'components/UseInput';
 
 import { uploadMetadataToIPFS } from 'slices/llcSlice.js';
+import './index.scss';
 
-const StepOne = () => {
+const StepTwo = () => {
   const dispatch = useDispatch();
 
   const [goal, FundingGoalInput] = useInput({
@@ -71,12 +72,14 @@ const StepOne = () => {
         <p className="text-center mb-10 tracking-widest">
           THe LLC WILL BE MANAGED BY:
         </p>
-        <div className="flex flex-col items-center">
-          <div className="flex flex-row justify-between tracking-widest">
-            <p>MANAGER - MANAGED (TRADITIONAL)</p>
+        <div className="flex flex-col">
+          <div className="llc-option flex flex-row items-center mb-4">
+            <input type="checkbox" className="traditional w-10 h-8" />
+            <p className=" tracking-widest">MANAGER - MANAGED (TRADITIONAL)</p>
           </div>
-          <div className="flex flex-row justify-between tracking-widest">
-            <p>MEMBER - MANAGED (DAO)</p>
+          <div className="llc-option flex flex-row items-center">
+            <input type="checkbox" className="dao w-10 h-8" />
+            <p className=" tracking-widest">MEMBER - MANAGED (DAO)</p>
           </div>
         </div>
       </div>
@@ -84,4 +87,4 @@ const StepOne = () => {
   );
 };
 
-export default StepOne;
+export default StepTwo;
